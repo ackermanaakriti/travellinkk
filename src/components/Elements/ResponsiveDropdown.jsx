@@ -80,7 +80,7 @@ const ResponsiveDropdown = ({categories, closeNav}) => {
                                                         <Link  key={index}
                                                         to={`/location/${item?.slug}`}>{
                                                             item ?. name
-                                                        } hello</Link>
+                                                        } </Link>
                                                     ) 
                                                     
                                                 }
