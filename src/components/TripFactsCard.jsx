@@ -26,8 +26,10 @@ const TripFactsCard = ({data, handleBtnClickA, handleShareClick}) => {
         duration,
         group_size,
         services,
-        price
+        price,
+        packageCategory
     } = data;
+    console.log(data.packageCategory.name);
     return (
         <div className='relative'>
             <div className=''>
@@ -53,7 +55,7 @@ const TripFactsCard = ({data, handleBtnClickA, handleShareClick}) => {
                         <div>
                             <strong>Trip  :
                             </strong>
-                            {trip}</div>
+                            {packageCategory.name}</div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><GiNetworkBars className='w-[24px] h-24px'/></div>
@@ -102,8 +104,8 @@ const TripFactsCard = ({data, handleBtnClickA, handleShareClick}) => {
                         <div>
                             <strong>Price :
                             </strong>
-                            starting from<span className='font-inter font-semibold text-[#0E9EDA]'>
-                                US${price}</span>
+                            starting from <span className='font-inter font-semibold text-[#0E9EDA]'>
+                                 US${price} </span>
                             per person
                         </div>
                     </div>

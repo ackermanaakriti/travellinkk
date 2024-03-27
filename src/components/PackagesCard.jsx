@@ -13,6 +13,7 @@ const PackagesCard = ({data, link, Package}) => {
         duration,
         price
     } = data;   
+    console.log(Package)
 
     const [isButtonHovered, setIsButtonHovered] = useState(false);
 
@@ -36,13 +37,13 @@ const PackagesCard = ({data, link, Package}) => {
                             </div>
                             <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134]'>
                                 <div><TbTrekking className='w-[24px] h-24px'/></div>
-                                <div>Trip Category : {Package}</div>
+                                <div>Trip  : {Package}</div>
                             </div>
                             <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                                 <div><ImPriceTag className='w-[24px] h-24px'/></div>
                                 <div>
-                                    Price : starting from<span className='font-inter font-semibold text-[#0E9EDA]'>
-                                        US${price}</span>
+                                    Price : starting from <span className='font-inter font-semibold text-[#0E9EDA]'>
+                                        US$ {price} </span>
                                 </div>
 
                             </div>

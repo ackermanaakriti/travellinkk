@@ -13,6 +13,7 @@ const PopularTrips = ({data}) => {
             setPopularTripsData(res.data.data);
         }).catch((err) => console.log(err));
     }, [])
+    console.log(popularTripsData)
 
 
     const navigate = useNavigate();
@@ -25,7 +26,7 @@ const PopularTrips = ({data}) => {
                 <div>
                     <div className="flex flex-row flex-wrap md:-mx-7 mx-0  mt-3 gap-y-5 justify-center ">
                         {
-                        popularTripsData?.slice(0, 6)?.map((item, index) => (
+                        popularTripsData?.slice(0, 7)?.map((item, index) => (
                             <PackagesCard key={index}
                                 data={item} Package={item?.packageCategory?.name}
                                 link={`/details/${item?.slug}`}

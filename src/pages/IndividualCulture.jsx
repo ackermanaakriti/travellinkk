@@ -146,7 +146,7 @@ console.log( "from culture",navCountryData)
                     handleOnclick={() => {
                       addMore();
                     }}
-                    btnName="View More Packages"
+                    btnName="View More Trips"
                     style="bg-transparent border-b-2 border-[#0E9EDA] font-semibold text-[#0E9EDA] font-inter px-[16px] "
                   />
                 )}{" "}
