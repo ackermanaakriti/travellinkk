@@ -110,10 +110,9 @@ const TripFactsCard = ({data, handleBtnClickA, handleShareClick}) => {
                         <div><ImPriceTag className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Price :
-                            </strong>
-                            starting from <span className='font-inter font-semibold text-[#0E9EDA]'>
+                            </strong> <span> starting from <span className='font-inter font-semibold text-[#0E9EDA]'>
                                  US${price} </span>
-                            per person
+                            per person </span>
                         </div>
                     </div>
                 </div>
