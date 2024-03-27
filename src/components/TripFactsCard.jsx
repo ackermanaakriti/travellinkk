@@ -40,64 +40,71 @@ const TripFactsCard = ({data, handleBtnClickA, handleShareClick}) => {
                         <div><BiSolidMapPin className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Country :
-                            </strong>
-                            {country?.name}</div>
+                            </strong> <span> {country?.name}</span> 
+                                       </div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><PiMapPin className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Region :
-                            </strong>
-                            {region}</div>
+                            </strong> <span>  {region}</span>
+                            </div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><TbTrekking className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Trip  :
-                            </strong>
-                            {packageCategory.name}</div>
+                            </strong> <span>
+                               {packageCategory.name}
+                            </span></div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><GiNetworkBars className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Level :
-                            </strong>
-                            {level}</div>
+                            </strong> <span>
+                            {level}
+                            </span></div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><BsImageAlt className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Max Altitude :
-                            </strong>
-                            {max_altitude}</div>
+                            </strong> <span>
+                            {max_altitude}
+                            </span></div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><TiWeatherPartlySunny className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Best Season :
-                            </strong>
-                            {best_season}</div>
+                            </strong> <span>
+                            {best_season}
+                            </span></div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><FaRegClock className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Duration :
-                            </strong>
-                            {duration}</div>
+                            </strong> <span>
+                            {duration}
+                            </span></div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><MdOutlineGroups className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Group Size  :
-                            </strong>
-                            {group_size}</div>
+                            </strong> <span>
+                            {group_size}
+                            </span></div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134]'>
                         <div><TbTrekking className='w-[24px] h-24px'/></div>
                         <div>
                             <strong>Service :
-                            </strong>
-                            {services?.title}</div>
+                            </strong> <span>
+                            {services?.title}
+                            </span></div>
                     </div>
                     <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                         <div><ImPriceTag className='w-[24px] h-24px'/></div>
