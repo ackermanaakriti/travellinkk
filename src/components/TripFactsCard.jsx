@@ -29,7 +29,7 @@ const TripFactsCard = ({data, handleBtnClickA, handleShareClick}) => {
         price,
         packageCategory
     } = data;
-    console.log(data.packageCategory.name);
+
     return (
         <div className='relative'>
             <div className=''>

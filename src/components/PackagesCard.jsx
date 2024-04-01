@@ -13,7 +13,7 @@ const PackagesCard = ({data, link, Package}) => {
         duration,
         price
     } = data;   
-    console.log(Package)
+
 
     const [isButtonHovered, setIsButtonHovered] = useState(false);
 

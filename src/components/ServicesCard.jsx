@@ -15,7 +15,7 @@ const ServicesCard = ({data, isEven, link, showbtn, wordLimit}) => {
     const navigate = useNavigate();
 
     const {image, title, details} = data;
-    console.log(data)
+ 
 
     const truncatedDetails = truncateWords(details, wordLimit);
 

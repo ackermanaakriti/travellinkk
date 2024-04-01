@@ -22,6 +22,7 @@ const DestinationDetail = () => {
       })
       .catch((err) => console.log(err));
   }, [slug]);
+  console.log(individualServicesData,'from individual')
 
   const serviceData = individualServicesData?.information;
   const relatedServiceData = individualServicesData?.packages;
@@ -89,7 +90,7 @@ const DestinationDetail = () => {
                   <PackagesCard
                     key={index}
                     data={item}
-                    Package={item?.name}
+                    Package={item?.trip}
                     link={`/details/${item?.slug}`}
                   />
                  

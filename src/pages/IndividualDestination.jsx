@@ -28,8 +28,9 @@ const IndividualDestination = () => {
         setLoading(false);
       });
   }, [id]);
-  console.log('from country',navCountryData)
+
   const CountryDataA = navCountryData?.packages;
+console.log(CountryDataA)
   const CountryDataB = navCountryData?.information;
 
   // const [destinationData, setDestinationData] = useState([]);
@@ -128,7 +129,7 @@ const IndividualDestination = () => {
                   <PackagesCard
                     key={index}
                     data={item}
-                    Package={item?.name}
+                    Package={item?.packageCategory?.name}
                     link={`/details/${item?.slug}`}
                   />
                  

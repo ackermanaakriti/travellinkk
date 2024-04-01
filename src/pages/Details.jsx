@@ -32,9 +32,10 @@ const Details = () => {
       })
       .catch((err) => console.log(err));
   }, [slug]);
+  console.log(packageDetailsData)
 
   const mainData = packageDetailsData?.package;
-  console.log(packageDetailsData,'from detail')
+
 
   const { setOverlay } = useGlobalContext();
   const [searchParams] = useSearchParams();

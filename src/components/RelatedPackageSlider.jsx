@@ -14,6 +14,7 @@ const RelatedPackageSlider = ({relatedPackagesListData}) => {
     const sliderRef = useRef(null);
     const navigate = useNavigate();
     console.log(relatedPackagesListData)
+ 
 
     const [isButtonHovered, setIsButtonHovered] = useState(false);
     const settings = {
@@ -83,7 +84,7 @@ const RelatedPackageSlider = ({relatedPackagesListData}) => {
                             </div>
                             <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134]'>
                                 <div><TbTrekking className='w-[24px] h-24px'/></div>
-                                <div>Trip  : {item.trip}</div>
+                                <div>Trip  : {item.packageCategory.name}</div>
                             </div>
                             <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                                 <div><ImPriceTag className='w-[24px] h-24px'/></div>

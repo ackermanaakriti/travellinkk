@@ -33,8 +33,9 @@ const IndividualCulture = () => {
   }, [slug]);
 console.log( "from culture",navCountryData)
   const CountryDataA = navCountryData?.data?.information;
-  console.log(CountryDataA)
+
   const CountryDataB = navCountryData?.data?.packages;
+  console.log(CountryDataB)
 
   // const [destinationData, setDestinationData] = useState([]);
 
