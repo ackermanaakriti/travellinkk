@@ -133,7 +133,7 @@ console.log( "from culture",navCountryData)
                   <PackagesCard
                     key={index}
                     data={item}
-                    Package={item?.name}
+                    Package={item?.packageCategory.name}
                     link={`/details/${item?.slug}`}
                   />
                  

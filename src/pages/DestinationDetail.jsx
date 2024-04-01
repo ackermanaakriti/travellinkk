@@ -8,20 +8,23 @@ import {
   PageTopTextComponent,
 } from "../components";
 import { useGlobalContext } from "../context/useGlobalContext";
-import { FetchNavCultureInfoData } from "../utils/apiQueries";
+import { FetchNavCultureInfoData,FetchNavCountryData } from "../utils/apiQueries";
 
 const DestinationDetail = () => {
-  const { slug } = useParams();
+  const { slug,id } = useParams();
   const [array, setArray] = useState([]);
   const [showBtn, setShowBtn] = useState(false);
   const [individualServicesData, setIndividualServicesData] = useState([]);
+  const [navCountryData, setNavCountryData] = useState({});
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     FetchNavCultureInfoData(slug)
       .then((res) => {
         setIndividualServicesData(res.data.data);
       })
       .catch((err) => console.log(err));
-  }, [slug]);
+
+  }, [slug,id]);
   console.log(individualServicesData,'from individual')
 
   const serviceData = individualServicesData?.information;
@@ -90,7 +93,7 @@ const DestinationDetail = () => {
                   <PackagesCard
                     key={index}
                     data={item}
-                    Package={item?.trip}
+                    // Package={item?.package_category.name}
                     link={`/details/${item?.slug}`}
                   />
                  

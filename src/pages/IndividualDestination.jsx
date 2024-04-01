@@ -30,7 +30,7 @@ const IndividualDestination = () => {
   }, [id]);
 
   const CountryDataA = navCountryData?.packages;
-console.log(CountryDataA)
+console.log(navCountryData)
   const CountryDataB = navCountryData?.information;
 
   // const [destinationData, setDestinationData] = useState([]);

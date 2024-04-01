@@ -16,6 +16,7 @@ export const GlobalContextProvider = (props) => {
   const [siteInfo, setSiteInfo] = useState();
   const [navActive, setNavActive] = useState();
   const [searchQuary, setSearchQuary] = useState('');
+ 
 
   return (
     <GlobalContext.Provider
@@ -27,7 +28,8 @@ export const GlobalContextProvider = (props) => {
         navActive: navActive,
         setNavActive: setNavActive,
         searchQuary:searchQuary,
-        setSearchQuary:setSearchQuary
+        setSearchQuary:setSearchQuary,
+
       }}
     >
       {props.children}
