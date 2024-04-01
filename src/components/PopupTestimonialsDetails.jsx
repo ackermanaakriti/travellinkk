@@ -45,7 +45,7 @@ const PopupTestimonialsDetails = ({handleCross, descriptionB}) => {
 
                         <div className='w-full flex items-center lg:justify-end'>
                             <h2 className='text-[#2D3134] text-[19px] leading-[21px] font-medium font-inter'>
-                                {package_name}</h2>
+                                Trip: {package_name}</h2>
                         </div>
                     </div>
 

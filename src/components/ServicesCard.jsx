@@ -14,8 +14,9 @@ const ServicesCard = ({data, isEven, link, showbtn, wordLimit}) => {
 
     const navigate = useNavigate();
 
-    const {image, name, details} = data;
-    console.log(image)
+    const {image, title, details} = data;
+    console.log(data)
+
     const truncatedDetails = truncateWords(details, wordLimit);
 
     return (
@@ -29,7 +30,7 @@ const ServicesCard = ({data, isEven, link, showbtn, wordLimit}) => {
                     </div>
                     <div className='w-full lg:w-1/2 flex flex-col justify-center gap-[17px]'>
                         <h2 className='font-semibold font-inter text-[32px] text-[#0E9EDA] leading-[32px] text-start'>
-                            {name}</h2>
+                            {title}</h2>
                         <p className='font-inter text-[#5B5F62]' dangerouslySetInnerHTML={{ __html: truncatedDetails }} />                         
                         {
                         showbtn && (
@@ -53,7 +54,7 @@ const ServicesCard = ({data, isEven, link, showbtn, wordLimit}) => {
                     </div>
                     <div className='w-full lg:w-1/2 flex flex-col justify-center gap-[17px]'>
                         <h2 className='font-semibold font-inter text-[32px] text-[#0E9EDA] leading-[32px] text-start'>
-                            {name} </h2>
+                            {title} </h2>
                         <p className='font-inter text-[#5B5F62]' dangerouslySetInnerHTML={{ __html: truncatedDetails }} />
                         {
                         showbtn && (

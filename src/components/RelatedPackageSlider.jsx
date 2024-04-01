@@ -13,6 +13,7 @@ import {ImPriceTag} from 'react-icons/im';
 const RelatedPackageSlider = ({relatedPackagesListData}) => {
     const sliderRef = useRef(null);
     const navigate = useNavigate();
+    console.log(relatedPackagesListData)
 
     const [isButtonHovered, setIsButtonHovered] = useState(false);
     const settings = {
@@ -64,7 +65,7 @@ const RelatedPackageSlider = ({relatedPackagesListData}) => {
                                 data={item} Package={item?.name}
                                 link={`/details/${item?.slug}`}/> */}
                                   <div className='w-[100%]  '>
-            <div className='w-full'>
+            <div className='w-full px-[30px]'>
                 <div className='shadow-md overflow-hidden p-4 bg-white'>
                     <div className='w-full relative h-[255px] overflow-hidden rounded-[24px]'>
                         <img src={item.main_image}
@@ -82,13 +83,12 @@ const RelatedPackageSlider = ({relatedPackagesListData}) => {
                             </div>
                             <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134]'>
                                 <div><TbTrekking className='w-[24px] h-24px'/></div>
-                                <div>Trip Category : {item.name}</div>
+                                <div>Trip  : {item.trip}</div>
                             </div>
                             <div className='flex gap-[16px] font-inter items-center font-normal text-[#2D3134] '>
                                 <div><ImPriceTag className='w-[24px] h-24px'/></div>
                                 <div>
-                                    Price : starting from<span className='font-inter font-semibold text-[#0E9EDA]'>
-                                        US${item.price}</span>
+                                    Price : starting from <span className='font-inter font-semibold text-[#0E9EDA]'> US$ {item.price}</span>
                                 </div>
 
                             </div>
@@ -99,7 +99,7 @@ const RelatedPackageSlider = ({relatedPackagesListData}) => {
                                 <Button handleOnclick={
                                         () => navigate(`/details/${item?.slug}`)
                                     }
-                                    btnName="View Deal"
+                                    btnName="View Details"
                                     style="w-full rounded-[5px] bg-transparent border border-[#0E9EDA] font-semibold text-[#0E9EDA] font-inter px-[16px] py-[11px]"/>
 
                             </div>

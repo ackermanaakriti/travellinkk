@@ -124,5 +124,5 @@
 }
 
 .list_style ul li{
-  list-style: circle !important;
+  list-style:inside;
 }

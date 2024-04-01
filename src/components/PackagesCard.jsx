@@ -54,7 +54,7 @@ const PackagesCard = ({data, link, Package}) => {
                                 <Button handleOnclick={
                                         () => navigate(link)
                                     }
-                                    btnName="View Deal"
+                                    btnName="View Details"
                                     style="w-full rounded-[5px] bg-transparent border border-[#0E9EDA] font-semibold text-[#0E9EDA] font-inter px-[16px] py-[11px]"/>
 
                             </div>

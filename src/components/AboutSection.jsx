@@ -27,7 +27,7 @@ const AboutSection = () => {
                         {
                         topAboutData ?. title
                     }</h2>
-                    <p className='font-normal font-inter text-[#5B5F62]' dangerouslySetInnerHTML={
+                    <p className='font-normal font-inter text-[#5B5F62] text-justify' dangerouslySetInnerHTML={
                             {
                                 __html: topAboutData ?. details?.length > 600 ? topAboutData?.details.slice(0, 600) + "..." : topAboutData ?. details 
                             }

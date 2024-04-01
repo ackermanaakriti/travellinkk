@@ -20,7 +20,7 @@ const ResponsiveNav = () => {
         }).catch((err) => console.log(err));
     }, []);
 
-    console.log(navListData)
+
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     const [isDropdownActive, setIsDropdownActive] = useState(false);
     const [dropdownId, setDropdownId] = useState();
