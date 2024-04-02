@@ -12,7 +12,7 @@ const AboutSection = () => {
         }).catch((err) => console.log(err));
     }, [])
 
-    console.log(topAboutData,'from about')
+    
     const navigate = useNavigate();
     return (
         <div>
