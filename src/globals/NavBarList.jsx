@@ -51,7 +51,9 @@ const NavBarList = () => {
                   navActive === item?.slug && "font-bold text-[px]"
                 } relative flex flex-col items-center`}
               >
-                <p>{item?.menuTitle}</p>
+                <Link  to={item?.link}>
+                <p>{item?.menuTitle} </p></Link>
+                
                 {activeNavItemIndex === index &&
                   item?.Catagories?.length > 0 && (
                     <div
@@ -78,7 +80,7 @@ const NavBarList = () => {
                               className={`relative  hover:text-blue text-[14px] text-[#34342d] py-[8px] px-[10px] flex justify-between gap-[20px] border-b border-[#2D3134]`}
                             >
                               <Link to={item?.link}>
-                                <p className="text-[14px]">{item?.menuTitle}</p>
+                                <p className="text-[14px]">{item?.menuTitle} </p>
                               </Link>
                               { item?.subCatagories?.length > 0 && (
                                 <p className="text-[21px]">
@@ -106,7 +108,7 @@ const NavBarList = () => {
                                         className={`relative hover:text-blue text-[#2D3134] py-[15px] px-[10px] flex justify-between gap-[20px] border-b border-[#2D3134]`}
                                       >
                                         <Link to={item?.link}>
-                                          <p>{item?.menuTitle}</p>
+                                          <p>{item?.menuTitle} </p>
                                         </Link>
                                         { item?.subCatagories?.length > 0 && (
                                           <p className="text-[21px]">
@@ -131,7 +133,7 @@ const NavBarList = () => {
                                                     to={item?.link}
                                                     className={`hover:text-blue text-[#2D3134] py-[15px] px-[10px] gap-[20px] border-b border-[#2D3134]`}
                                                   >
-                                                    <p>{item?.menuTitle} hello</p>
+                                                    <p>{item?.menuTitle} </p>
                                                   </Link>
                                                 )
                                               )}

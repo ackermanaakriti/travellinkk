@@ -3,7 +3,7 @@ export const navItems = [
 
     {
         menuTitle: "About Us",
-        link: "",
+        link: "/about-us",
         slug: "about-us",
         Catagories: [
             {

@@ -72,6 +72,7 @@ const MajorTouristTabSlider = () => {
       })
       .catch((err) => console.log(err));
   }, []);
+  console.log(countryData)
 
   const [displayingPackageData, setDisplayingPackageData] = useState([]);
 
@@ -98,7 +99,7 @@ const MajorTouristTabSlider = () => {
         const data = await FetchNavCountryData(countryData[0]?.id).then(
           (res) => res.data?.data?.information
         );
-        console.log(data)
+     
         if (data?.length > 0) {
           if (data?.length > 0) {
             setDisplayingPackageData(data);
@@ -128,7 +129,7 @@ const MajorTouristTabSlider = () => {
                   handleTabclick(item?.id);
                 }}
               >
-                {item?.name}
+                {item?.name} 
               </p>
             </div>
           ))}
