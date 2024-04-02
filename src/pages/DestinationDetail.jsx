@@ -15,14 +15,14 @@ const DestinationDetail = () => {
   const [array, setArray] = useState([]);
   const [showBtn, setShowBtn] = useState(false);
   const [individualServicesData, setIndividualServicesData] = useState([]);
-  const [navCountryData, setNavCountryData] = useState({});
-  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     FetchNavCultureInfoData(slug)
       .then((res) => {
         setIndividualServicesData(res.data.data);
       })
       .catch((err) => console.log(err));
+      
 
   }, [slug,id]);
   console.log(individualServicesData,'from individual')
@@ -93,7 +93,7 @@ const DestinationDetail = () => {
                   <PackagesCard
                     key={index}
                     data={item}
-                    // Package={item?.package_category.name}
+                    Package={item?.package_category}
                     link={`/details/${item?.slug}`}
                   />
                  
@@ -115,8 +115,7 @@ const DestinationDetail = () => {
           </div>
         </div>
       </>
-      {/* )
-        }  */}{" "}
+      
     </div>
   );
 };
