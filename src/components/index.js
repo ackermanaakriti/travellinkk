@@ -35,7 +35,7 @@ import Share from "./Share";
 import ImageView from "./ImageView";
 import BackgroundOverlay from "./BackgroundOverlay";
 import MetaDecorator from "./MetaDecorator";
-
+import SearchCard from './SearchCard';
 export {
     SearchInput,
     HeroSection,
@@ -73,5 +73,6 @@ export {
     Share,
     ImageView,
     BackgroundOverlay,
-    MetaDecorator,   
+    MetaDecorator, 
+    SearchCard,  
 }

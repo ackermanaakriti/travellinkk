@@ -21,6 +21,7 @@ import {
   IndividualDestination,
   DestinationDetail,
   CultureDetail,
+  AttractionDetail,
 } from "./pages";
 import FloatingNav from "./globals/FloatingNav";
 import { FetchAllTitleDatas, FetchSiteInfoDatas } from "./utils/apiQueries";
@@ -70,6 +71,7 @@ function App() {
           <Route path="/service/services-information/:slug" element={<IndividualServices />} />
           <Route path="/country/:id" element={<IndividualDestination />} />
           <Route path="/country/information/:slug" element={<DestinationDetail />} />
+          <Route path="/country/attraction/:slug" element={<AttractionDetail />} />
           <Route path="/location/:slug" element={<IndividualCulture />} />
           <Route path="/location/information/:slug" element={<CultureDetail />} />
           <Route path="/blogs" element={<Blogs />} />        

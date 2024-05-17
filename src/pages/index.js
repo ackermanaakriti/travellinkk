@@ -16,6 +16,7 @@ import IndividualCulture from "./IndividualCulture";
 import IndividualDestination from "./IndividualDestination";
 import DestinationDetail from "./DestinationDetail";
 import CultureDetail from "./CultureDetail";
+import AttractionDetail from './AttractionDetail';
 
 export {
     Home,
@@ -36,4 +37,5 @@ export {
     IndividualDestination,
     DestinationDetail,
     CultureDetail,
+    AttractionDetail
 }

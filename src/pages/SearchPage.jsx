@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { PackagesCard } from "../components";
+import { PackagesCard, SearchCard } from "../components";
 import { PostSearchInput } from "../utils/apiQueries";
 import { useGlobalContext } from "../context/useGlobalContext";
 
@@ -50,7 +50,7 @@ const SearchPage = () => {
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[51px] mt-3">
           {data?.map((item, index) => (
-            <PackagesCard
+            <SearchCard
               key={index}
               data={item}
               link={`/details/${item?.slug}`}
