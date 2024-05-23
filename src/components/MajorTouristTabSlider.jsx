@@ -172,7 +172,6 @@ const MajorTouristTabSlider = () => {
               </div>
             )
           )}
-          ;
           {/* {countryData?.map((item, index) => (
             <div key={index}>
               <p
