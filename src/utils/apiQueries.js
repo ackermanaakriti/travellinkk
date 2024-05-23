@@ -191,7 +191,7 @@ export const FetchNavDestinationInfoData = (slug) => {
 }
 
 export const FetchDataAttraction = () => {
-   const data = axiosBaseURL.get(`/api/v1/all-major-tourist-attraction/`);
+   const data = axiosBaseURL.get(`/api/v1/all-major-tourist-attraction`);
    return data;
  };
 
